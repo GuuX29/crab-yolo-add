@@ -1,0 +1,9 @@
+# 上面那三个txt文件的位置
+train: ./VOCdata/VOCTrainVal/TrainVal_train.txt
+val: ./VOCdata/VOCTrainVal/TrainVal_val.txt
+test: ./VOCdata/VOCTest/Test_test.txt
+# number of classes
+nc: 12   # 修改为自己的类别数量
+# class names
+names: ['Uca arcuata', 'Uca lactea', 'Uca borealis', 'Uca splendida', 'Parasesarma plicatum', 'Parasesarma eumolpe','Perisesarma bidens', 'Macrophthalmus tomentosus', 'Metaplax elegans', 'Ilyoplax tansuiensis',
+        'Ilyoplax serrata', 'Deiratonotus cristatum']   # 自己来的类别名称

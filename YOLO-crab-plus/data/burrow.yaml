@@ -1,0 +1,5 @@
+names: ['burrow']
+nc: 1
+test: /root/autodl-tmp/yolov5/dataset/burrow/Dataset/test.txt
+train: /root/autodl-tmp/yolov5/dataset/burrow/Dataset/train.txt
+val: /root/autodl-tmp/yolov5/dataset/burrow/Dataset/val.txt

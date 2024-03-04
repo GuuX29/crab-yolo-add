@@ -1,0 +1,5 @@
+names: ['rect']
+nc: 1
+test: /root/autodl-tmp/yolov5/dataset/frame/Dataset/test.txt
+train: /root/autodl-tmp/yolov5/dataset/frame/Dataset/train.txt
+val: /root/autodl-tmp/yolov5/dataset/frame/Dataset/val.txt

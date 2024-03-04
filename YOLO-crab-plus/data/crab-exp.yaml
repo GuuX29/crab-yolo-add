@@ -1,0 +1,13 @@
+train: ./crabdata4w/Dataset/train.txt
+val: ./100-OOD-DATA/Dataset/test.txt
+test: ./100-OOD-DATA/Dataset/test.txt
+
+# number of classes
+nc: 20 
+# class names
+names: ['Tubuca arcuata', 'Austruca lactea', 'Gelasimus spp', 'Paraleptuca splendida', 'Austruca annulipes', 'Tubuca paradussumieri',
+            'Parasesarma affine', 'Parasesarma eumolpe', 'Parasesarma continentale', 'Sesarmidae spp',
+            'Macrophthalmus tomentosus', 'Macrophthalmus pacificus',
+            'Metaplax spp', 'Metaplax elegans',
+            'Ilyoplax formosensis','Ilyoplax serrata', 'Tmethypocoelis ceratophora',
+            'SWL','Paracleistostoma depressum','Scopimera intermedia']  
