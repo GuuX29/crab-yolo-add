@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project's code is designed for analyzing  crab (in coastal wetland) images based on YOLOv5/v8 and EfficientNet. It includes functionalities such as crab object detection, counting, classification, feature extraction, crab burrow detection and counting, sampling frame positioning, and biomass estimation. The project will be continuously updated to achieve full functionality.
+This project's code is designed for analyzing  crab (in coastal wetland) images based on YOLOv5/v8 [Ultralytics](https://github.com/ultralytics/ultralytics) and EfficientNet. It includes functionalities such as crab object detection, counting, classification, feature extraction, crab burrow detection and counting, sampling frame positioning, and biomass estimation. The project will be continuously updated to achieve full functionality.
 The model weights can be found at https://doi.org/10.5281/zenodo.10776556 , please refer to the instructions for details.
 ## Usage
 
