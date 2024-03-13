@@ -29,5 +29,6 @@ These additions have been made to the original `detect.py` functionality. The `-
 - In `detect-frame.py`, a photo distortion correction is performed during data loading (based on calibration data, article link to be uploaded).
 
 The code is partially inspired by [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) and [Efficientnet_pytorch_cbam_gui](https://github.com/whisperLiang/Efficientnet_pytorch_cbam_gui).
+Attention module added from https://github.com/ZjjConan/SimAM and https://github.com/hujie-frank/SENet
 
 Feel free to adapt the steps and customize the usage according to your specific requirements. Thank you for using our project!

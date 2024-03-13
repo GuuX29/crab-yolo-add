@@ -268,28 +268,12 @@ def parse_model(d, ch):  # model_dict, input_channels(3)
                 n = 1
     
         # ------------Attention ↆ------------
-        elif m in [SimAM, ECA]:  
+        elif m in [SimAM]:  
             args = [*args[:]]
-        elif m in [CoordAtt]: 
-            c1, c2 = ch[f], args[0]
-            if c2 != no:
-                c2 = make_divisible(c2 * gw, 8)
-            args = [c1, c2, *args[1:]]
-        elif m in [SE, CBAM]:  
+        elif m in [SE]:  
             c1 = ch[f]
             args = [c1, *args[0:]]
         # ------------Attention ↑--------------
-
-        # ------------FasterNeXt ↆ------------
-        elif m in [FasterNeXt]:
-            c1, c2 = ch[f], args[0]
-            if c2 != no:  # if not output
-                c2 = make_divisible(c2 * gw, 8)
-            args = [c1, c2, *args[1:]]
-            if m in [FasterNeXt]:
-                args.insert(2, n)  # number of repeats
-                n = 1
-        # ------------FasterNeXt ↑--------------
 
         elif m is nn.BatchNorm2d:
             args = [ch[f]]
