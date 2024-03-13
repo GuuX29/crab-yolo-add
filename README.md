@@ -7,6 +7,7 @@ The model weights can be found at https://doi.org/10.5281/zenodo.10776556 , plea
 ## Usage
 
 To use the code, simply copy and paste it into YOLOv5 v6.0 (Download link: [YOLOv5 v6.0](https://github.com/ultralytics/yolov5/releases/tag/v6.0)) and choose to overwrite. It is recommended to use the project's requirements.txt for installation (`pip install -r requirements.txt`). A user-friendly UI version will be updated in the future for easier operation.
+The files starting with `detect-...py` and the code in the `utils.py` folder are all modified from [YOLOv5 v6.0](https://github.com/ultralytics/yolov5/releases/tag/v6.0), with explanations provided only for the modified parts. 
 
 Analysis should follow the steps below. A cohesive code will be updated in the future:
 1. Use `detect-frame.py` to detect sampling frames in the images.
@@ -24,6 +25,8 @@ Some parameter explanations:
 These additions have been made to the original `detect.py` functionality. The `--classify` command is used to activate the second-stage classifier with category selection, while the `--carapace` command is used to start the segmentation model for segmenting the carapace of crustaceans and estimating the width of the carapace. This includes a fault-tolerant mechanism where, if the carapace cannot be effectively detected, the width is estimated based on the diagonal of the bounding box. For more information, refer to the article (under submission, link to be updated).
 
 - `detect-xml-2c.py` allows only the selection of whether to call the second-stage classifier, similar to `--classify`. It can also save the results as an XML file for annotation inspection, use `--save-xml`. The classes inside are predefined; if used, please modify them to match your own trained model's classes.
+
+- In `detect-frame.py`, a photo distortion correction is performed during data loading (based on calibration data, article link to be uploaded).
 
 The code is partially inspired by [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) and [Efficientnet_pytorch_cbam_gui](https://github.com/whisperLiang/Efficientnet_pytorch_cbam_gui).
 
