@@ -31,16 +31,5 @@ These additions have been made to the original `detect.py` functionality. The `-
 The code is partially inspired by [EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) and [Efficientnet_pytorch_cbam_gui](https://github.com/whisperLiang/Efficientnet_pytorch_cbam_gui).
 Attention module added from https://github.com/ZjjConan/SimAM and https://github.com/hujie-frank/SENet
 
-![Specimen Image](https://github.com/GuuX29/crab-yolo-add/tree/main/sample/20230809-Wenchang-by Zhiyuan Shi.jpg)
-
-Specimen image detection examples provided by Zhiyuan Shi, taken in Wenchang City, Hainan Province, China. 
-
-![Field Image](https://github.com/GuuX29/crab-yolo-add/tree/main/sample/2020-Danzhou-by Xuan Gu.jpg)
-
-Crab field sampling image detection example, photographed by Xuan Gu in Danzhou City, Hainan Province, China, enabling crab detection and preliminary classification in complex environmental backgrounds
-
-![Burrow Image](https://github.com/GuuX29/crab-yolo-add/tree/main/sample/2020-Luoyuan-by Xuan Gu.jpg)
-
-Crab burrow field sampling image detection example, photographed by Xuan Gu in Luoyuan County, Fujian Province, China, automatic detection of crab burrows aids in counting and analysis.
 
 Feel free to adapt the steps and customize the usage according to your specific requirements. Thank you for using our project!
